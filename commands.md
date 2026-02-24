@@ -115,7 +115,7 @@ git stash drop                      # Delete latest stash
 
 ------------------------------------------------------------------------
 
-## 🔹 11. Tags
+## 🔹 11. Tags (Software Versioning i.e. v1.0.0)
 
 ```bash
 git tag                             # List all tags
@@ -123,6 +123,16 @@ git tag <name>                      # Create a lightweight tag
 git tag -a <name> -m "message"      # Annotated tag
 git push origin <tag>               # Push specific tag
 git push origin --tags              # Push all tags
+git tag -d v1.0.0                   # Delete the mentioned tag
+
+OR
+
+git tag -a v1.0.0 <SHA(optional)>
+Vim editor:
+Fn + insert key                     # write message(i.e. v1.0.0)
+Esc key
+:wq                                 # save and quit
+git tag -d v1.0.0                   # Delete the mentioned tag
 ```
 
 ------------------------------------------------------------------------
